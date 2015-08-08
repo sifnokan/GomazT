@@ -8,7 +8,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gomazt.Controller">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -30,25 +30,21 @@
         </menus>
       </MenuBar>
    </top>
-   <center>
-      <TreeTableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-        <columns>
-          <TreeTableColumn prefWidth="75.0" text="No." />
-          <TreeTableColumn prefWidth="75.0" text="★" />
-            <TreeTableColumn prefWidth="75.0" text="属性" />
-            <TreeTableColumn prefWidth="75.0" text="名前" />
-            <TreeTableColumn prefWidth="75.0" text="魔力" />
-            <TreeTableColumn prefWidth="75.0" text="分類" />
-            <TreeTableColumn prefWidth="75.0" text="ショット" />
-            <TreeTableColumn prefWidth="75.0" text="スキル種類" />
-            <TreeTableColumn prefWidth="75.0" text="スキル効果" />
-            <TreeTableColumn prefWidth="75.0" text="相性1" />
-            <TreeTableColumn prefWidth="75.0" text="相性2" />
-            <TreeTableColumn prefWidth="75.0" text="相性3" />
-        </columns>
-      </TreeTableView>
-   </center>
    <bottom>
       <TextField BorderPane.alignment="CENTER" />
    </bottom>
+   <center>
+      <TableView fx:id="tv" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="tc1" prefWidth="75.0" text="No." />
+            <TableColumn fx:id="tc2" prefWidth="75.0" text="名前" />
+            <TableColumn fx:id="tc3" prefWidth="75.0" text="★" />
+            <TableColumn fx:id="tc4" prefWidth="75.0" text="属性" />
+            <TableColumn fx:id="tc5" prefWidth="75.0" text="魔力" />
+            <TableColumn fx:id="tc6" prefWidth="75.0" text="タイプ" />
+            <TableColumn fx:id="tc7" prefWidth="75.0" text="ショット" />
+            <TableColumn fx:id="tc8" prefWidth="75.0" text="スキル" />
+        </columns>
+      </TableView>
+   </center>
 </BorderPane>
